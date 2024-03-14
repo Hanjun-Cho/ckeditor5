@@ -1,8 +1,8 @@
 {
-  "name": "ckeditor5",
+  "name": "@hjc/ckeditor5",
   "version": "41.2.0",
   "description": "The development environment of CKEditor 5 - the best browser-based rich text editor.",
-  "private": true,
+  "private": false,
   "keywords": [
     "ckeditor",
     "ckeditor5",
@@ -107,7 +107,7 @@
     "@ckeditor/ckeditor5-format-painter": "41.2.0",
     "@ckeditor/ckeditor5-import-word": "41.2.0",
     "@ckeditor/ckeditor5-inspector": "^4.0.0",
-    "@ckeditor/ckeditor5-mermaid": "ckeditor/ckeditor5-mermaid#v0.0.2",
+    "@ckeditor/ckeditor5-mermaid": "github:ckeditor/ckeditor5-mermaid#v0.0.2",
     "@ckeditor/ckeditor5-pagination": "41.2.0",
     "@ckeditor/ckeditor5-paste-from-office-enhanced": "41.2.0",
     "@ckeditor/ckeditor5-react": "^6.0.0",
@@ -163,10 +163,12 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git"
+    "url": "git+https://github.com/ckeditor/ckeditor5.git"
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
@@ -229,5 +231,10 @@
       "external/*/packages/*",
       "."
     ]
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
