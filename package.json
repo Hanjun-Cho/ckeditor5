@@ -20,6 +20,7 @@
     "real-time",
     "framework"
   ],
+  "type": "module",
   "dependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "41.2.0",
     "@ckeditor/ckeditor5-alignment": "41.2.0",
